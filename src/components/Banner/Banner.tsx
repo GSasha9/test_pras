@@ -1,3 +1,5 @@
+import styles from './Banner.module.scss';
+
 export interface BannerProps {
   primaryText: string;
   secondaryText: string;
@@ -7,7 +9,7 @@ export interface BannerProps {
 const Banner = ({ primaryText, secondaryText, imgLink }: BannerProps) => {
   return (
     <div
-      className="banner__wrapper"
+      className={styles.banner__wrapper}
       style={{ backgroundImage: `url(${imgLink})` }}
     >
       <p>#{secondaryText}</p>
