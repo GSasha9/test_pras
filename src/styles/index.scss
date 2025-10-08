@@ -1,2 +1,6 @@
-@use './scss/variables.module.scss' as *;
+@use './scss/variables.scss' as *;
 @use './normalize.css';
+
+body {
+  font-family: $font-family-base;
+}

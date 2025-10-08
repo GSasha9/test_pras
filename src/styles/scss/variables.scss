@@ -1,10 +1,9 @@
-$light-background: #f9f7f7;
-$bright-background: #f5ff7c;
+$light-background: #ffffff;
 
 $text-primary: #3d3d3d;
-$primary-text-purple: #ae75e3;
+$text-light: #ffffff;
 
-$font-family-base: 'Open Sans', sans-serif;
+$font-family-base: 'Roboto Flex', sans-serif;
 
 $spacing-xxs: 2px;
 $spacing-xs: 4px;
@@ -19,13 +18,13 @@ $border-radius-md: 8px;
 $border-radius-lg: 16px;
 $border-radius-circle: 50%;
 
-$font-size-error-message: 12px;
+$font-size-text-12: 12px;
 $font-size-regular: 14px;
-$font-size-button-cards: 16px;
-$font-size-h1: 70px;
-$font-size-h2: 30px;
-$font-size-h3: 20px;
-$font-size-h4: 18px;
+//$font-size-button-cards: 16px;
+//$font-size-h1: 70px;
+$font-size-h2: 40px;
+//$font-size-h3: 20px;
+//$font-size-h4: 18px;
 
 $font-weight-normal: 400;
 $font-weight-medium: 500;
@@ -36,9 +35,9 @@ $line-height-tight: 1.2;
 $line-height-normal: 1.5;
 $line-height-loose: 1.8;
 
-$transition-fast: 0.2s;
-$transition-normal: 0.3s;
-$transition-slow: 0.5s;
+// $transition-fast: 0.2s;
+// $transition-normal: 0.3s;
+// $transition-slow: 0.5s;
 
 $z-index-dropdown: 1000;
 $z-index-sticky: 1020;
