@@ -1,0 +1,33 @@
+@use '../../styles/scss/variables.scss' as *;
+
+.socials__wrapper {
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .socials__list {
+    display: flex;
+    gap: $spacing-lg;
+    list-style: none;
+    background-color: $bright-background;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    .socials__list_item {
+      width: 48px;
+      height: 48px;
+
+      .socials__list_link {
+        width: inherit;
+        height: inherit;
+        display: block;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}

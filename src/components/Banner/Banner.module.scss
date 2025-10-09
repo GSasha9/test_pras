@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  position: absolute;
+  //position: absolute;
   left: 0px;
 
   .banner__text {
@@ -45,4 +45,5 @@
 
 .big {
   min-height: 580px;
+  position: absolute;
 }

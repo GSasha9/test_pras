@@ -7,3 +7,5 @@ export * from './sub-header-menu-list';
 export * from './news-data';
 
 export * from './citation-data';
+
+export * from './socials-icons';

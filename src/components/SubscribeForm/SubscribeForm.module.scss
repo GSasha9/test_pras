@@ -1,0 +1,22 @@
+.subscribe__wrapper {
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .subscribe__form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    height: 180px;
+
+    .form_input {
+      width: 55%;
+      height: 28px;
+      border: none;
+      background-color: inherit;
+      border-bottom: 2px solid gray;
+    }
+  }
+}

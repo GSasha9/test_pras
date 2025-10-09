@@ -14,10 +14,12 @@
     font-weight: $font-weight-normal;
   }
 
+  .main__section,
   .news {
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
+    width: 100%;
   }
 
   .news__row {
@@ -27,5 +29,15 @@
 
   .citations {
     display: flex;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
