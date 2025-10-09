@@ -1,8 +1,7 @@
-import Banner from './components/Banner/Banner';
-import { BANNERS_DATA } from './shared/constants/banners-data';
+import Header from './components/Header/Header';
 
 function App() {
-  return <Banner {...BANNERS_DATA.header} />;
+  return <Header />;
 }
 
 export default App;

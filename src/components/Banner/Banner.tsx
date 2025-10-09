@@ -4,12 +4,18 @@ export interface BannerProps {
   primaryText: string;
   secondaryText: string;
   imgLink: string;
+  inHeader?: boolean;
 }
 
-const Banner = ({ primaryText, secondaryText, imgLink }: BannerProps) => {
+const Banner = ({
+  primaryText,
+  secondaryText,
+  imgLink,
+  inHeader,
+}: BannerProps) => {
   return (
     <div
-      className={styles.banner__wrapper}
+      className={`${styles.banner__wrapper} ${inHeader ? styles.big : styles.small}`}
       style={{
         backgroundImage: `
           linear-gradient(
@@ -21,7 +27,6 @@ const Banner = ({ primaryText, secondaryText, imgLink }: BannerProps) => {
           ),
           url(${imgLink})
         `,
-        maxHeight: 'inherit',
       }}
     >
       <div className={styles.banner__text}>

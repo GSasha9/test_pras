@@ -12,7 +12,9 @@ const Menu = ({ items, upperCase }: MenuProps) => {
       style={upperCase ? { textTransform: 'uppercase' } : {}}
     >
       {items.map((el) => (
-        <li key={el}>{el}</li>
+        <li key={el} className={styles.menu__list_item}>
+          {el}
+        </li>
       ))}
     </ul>
   );

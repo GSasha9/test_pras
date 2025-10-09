@@ -5,5 +5,6 @@ export const BANNERS_DATA: Record<string, BannerProps> = {
     primaryText: `Юрий Поклад: «Динамо» как бы начинает работать заново`,
     secondaryText: 'Экстрим',
     imgLink: 'tennis.png',
+    inHeader: true,
   },
 };

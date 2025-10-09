@@ -1,7 +1,7 @@
 @use '../../styles/scss/variables.scss' as *;
 
 .banner__wrapper {
-  min-height: 580px;
+  min-height: inherit;
   background-position: center;
   color: $text-light;
   display: flex;
@@ -10,6 +10,9 @@
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
+  position: absolute;
+  left: 0px;
 
   .banner__text {
     max-width: 650px;
@@ -28,4 +31,12 @@
       font-weight: $font-weight-bold;
     }
   }
+}
+
+.small {
+  min-height: 536px;
+}
+
+.big {
+  min-height: 580px;
 }

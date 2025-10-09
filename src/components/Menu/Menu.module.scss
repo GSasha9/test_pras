@@ -1,3 +1,12 @@
+@use '../../styles/scss/variables.scss' as *;
+
 .menu__list {
   display: flex;
+  list-style: none;
+  color: $text-light;
+  gap: $spacing-xxl;
+
+  .menu__list_item {
+    font-size: $font-size-text-12;
+  }
 }
