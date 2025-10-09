@@ -1,3 +1,5 @@
+@use '../../styles/scss/variables.scss' as *;
+
 .header {
   min-height: 580px;
   width: 100%;
@@ -9,7 +11,18 @@
     position: relative;
     padding-top: 30px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+
+    gap: 580px;
+
+    @include respond-xxl {
+            width: 1342px;
+      justify-content: space-between;
+    }
+
+    .menu__nav {
+      display: flex;
+      gap: $spacing-xxl;
+    }
   }
 }

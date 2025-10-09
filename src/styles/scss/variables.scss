@@ -13,6 +13,7 @@ $spacing-lg: 24px;
 $spacing-xl: 40px;
 $spacing-xxl: 50px;
 
+$border-radius-burger: 2px;
 $border-radius-input: 5px;
 $border-radius-md: 8px;
 $border-radius-lg: 16px;
@@ -92,7 +93,7 @@ $breakpoint-xxl: 1400px;
 }
 
 @mixin respond-xxl {
-  @media screen and (max-width: $breakpoint-xxl) {
+  @media screen and (min-width: $breakpoint-xxl) {
     @content;
   }
 }
@@ -102,3 +103,9 @@ $container-md: 720px;
 $container-lg: 960px;
 $container-xl: 1140px;
 $container-xxl: 1320px;
+
+@mixin text-spaced {
+  font-size: $font-size-text-12;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

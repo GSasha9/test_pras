@@ -5,8 +5,11 @@
   list-style: none;
   color: $text-light;
   gap: $spacing-xxl;
+  padding-left: 0;
 
   .menu__list_item {
-    font-size: $font-size-text-12;
+    @include text-spaced;
+    max-width: 105px;
+    width: fit-content;
   }
 }
