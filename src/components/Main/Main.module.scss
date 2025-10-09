@@ -1,0 +1,27 @@
+@use '../../styles/scss/variables.scss' as *;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  h4 {
+    @include text-spaced;
+    padding: $spacing-xl 0px $spacing-lg;
+    font-size: $font-size-h4;
+    text-transform: uppercase;
+    font-weight: $font-weight-normal;
+  }
+
+  .news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .news__row {
+    display: flex;
+    gap: $spacing-xl;
+  }
+}
