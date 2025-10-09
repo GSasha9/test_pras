@@ -20,6 +20,12 @@
     flex-direction: column;
     gap: $spacing-md;
 
+    a {
+      &:hover {
+        color: $bright-background;
+      }
+    }
+
     .banner__text_secondary {
       @include text-spaced;
       color: $text-light;

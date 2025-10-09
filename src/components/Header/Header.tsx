@@ -1,4 +1,8 @@
-import { BANNERS_DATA, HEADER_MENU_LIST } from '../../shared/constants';
+import {
+  BANNERS_DATA,
+  HEADER_MENU_LIST,
+  SUB_HEADER_MENU_LIST,
+} from '../../shared/constants';
 import Banner from '../Banner/Banner';
 import BurgerButton from '../BurgerIcon/BurgerButton';
 import Logo from '../Logo/Logo';
@@ -18,6 +22,9 @@ const Header = () => {
             <BurgerButton />
           </nav>
         </div>
+        <nav className={styles.subMenu__wrapper}>
+          <Menu items={SUB_HEADER_MENU_LIST} upperCase={false} />
+        </nav>
       </div>
     </header>
   );

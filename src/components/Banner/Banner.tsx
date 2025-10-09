@@ -30,8 +30,10 @@ const Banner = ({
       }}
     >
       <div className={styles.banner__text}>
-        <p className={styles.banner__text_secondary}>#{secondaryText}</p>
-        <h2 className={styles.banner__text_primary}>{primaryText}</h2>
+        <a href="#">
+          <p className={styles.banner__text_secondary}>#{secondaryText}</p>
+          <h2 className={styles.banner__text_primary}>{primaryText}</h2>
+        </a>
       </div>
     </div>
   );

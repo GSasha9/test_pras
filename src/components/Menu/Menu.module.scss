@@ -6,10 +6,46 @@
   color: $text-light;
   gap: $spacing-xxl;
   padding-left: 0;
+  margin: 0px 10px;
 
-  .menu__list_item {
+  .item_uppercase {
     @include text-spaced;
-    max-width: 105px;
-    width: fit-content;
+    white-space: nowrap;
+  }
+
+  .item_regular {
+    font-size: $font-size-regular;
+    white-space: nowrap;
+  }
+
+   li {
+    position: relative;
+
+    a {
+      text-decoration: none;
+      color: $text-light;
+      font-weight: 500;
+      padding: 4px 0;
+      transition: color 0.3s;
+
+      &:hover {
+        color: white;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2;
+        width: 0%;
+        height: 2px;
+        background-color: white;
+        transition: width 0.3s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
   }
 }
