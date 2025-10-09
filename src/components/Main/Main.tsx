@@ -1,4 +1,6 @@
+import { CITATION_DATA } from '../../shared/constants';
 import { NEWS_DATA } from '../../shared/constants/news-data';
+import Citation from '../Citation/Citation';
 import NewsBlock from '../NewsBlock/NewsBlock';
 
 import styles from './Main.module.scss';
@@ -17,6 +19,11 @@ const Main = () => {
             <NewsBlock {...NEWS_DATA.football} />
             <NewsBlock {...NEWS_DATA.alpinism} />
           </div>
+          <section className={styles.citations}>
+            {Object.keys(CITATION_DATA).map((el) => (
+              <Citation {...CITATION_DATA[el]} key={crypto.randomUUID()} />
+            ))}
+          </section>
         </section>
       </div>
     </main>
