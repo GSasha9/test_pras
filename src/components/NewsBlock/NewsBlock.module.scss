@@ -1,0 +1,74 @@
+@use '../../styles/scss/variables.scss' as *;
+
+.newsBlock__link {
+  .newsBlock__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+    width: 640px;
+    max-height: 581px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: $spacing-md;
+
+    .newsBlock__img {
+      max-width: 100%;
+    }
+
+    .newsBlock__meta {
+      display: flex;
+      align-items: center;
+
+      .newsBlock__meta_date {
+        @include text-spaced;
+        text-transform: capitalize;
+        color: $text-secondary;
+
+        &::after {
+          content: '|';
+          margin: 0 6px;
+        }
+      }
+
+      .newsBlock__meta_tag {
+        @include text-spaced;
+        text-transform: uppercase;
+        font-size: 11px;
+      }
+    }
+
+    .newsBlock__title {
+      font-size: $font-size-h3;
+      font-weight: $font-weight-bold;
+    }
+
+    .newsBlock__preview {
+      font-size: 20px;
+      font-weight: $font-weight-normal;
+      color: $text-secondary;
+    }
+  }
+
+  .covered {
+    height: 540px;
+    max-width: 600px;
+    justify-content: flex-end;
+    color: $text-light;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: $spacing-lg;
+
+    .newsBlock__meta_date,
+    .newsBlock__meta_tag,
+    .newsBlock__title,
+    .newsBlock__preview {
+      color: $text-light;
+    }
+  }
+  &:hover {
+    .newsBlock__title {
+      color: $bright-background;
+    }
+  }
+}
