@@ -21,6 +21,7 @@ const Banner = ({ primaryText, secondaryText, imgLink }: BannerProps) => {
           ),
           url(${imgLink})
         `,
+        maxHeight: 'inherit',
       }}
     >
       <div className={styles.banner__text}>
