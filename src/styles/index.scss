@@ -1,0 +1,21 @@
+@use './scss/variables.scss' as *;
+@use './normalize.css';
+
+body {
+  font-family: $font-family-base;
+  width: 100%;
+  background-color: $light-background;
+}
+
+:root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+}
+
+.container {
+  max-width: $container-xxl;
+  width: 100%;
+}

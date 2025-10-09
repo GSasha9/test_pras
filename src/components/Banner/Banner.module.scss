@@ -1,0 +1,48 @@
+@use '../../styles/scss/variables.scss' as *;
+
+.banner__wrapper {
+  min-height: inherit;
+  background-position: center;
+  color: $text-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+
+  .banner__text {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+
+    a {
+      &:hover {
+        color: $bright-background;
+      }
+    }
+
+    .banner__text_secondary {
+      @include text-spaced;
+      color: $text-light;
+      padding-top: $spacing-xl;
+    }
+
+    .banner__text_primary {
+      font-size: $font-size-h2;
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.small {
+  min-height: 536px;
+}
+
+.big {
+  min-height: 580px;
+}
