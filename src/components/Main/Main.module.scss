@@ -13,6 +13,10 @@
     font-size: $font-size-h4;
     text-transform: uppercase;
     font-weight: $font-weight-normal;
+
+    @media screen and (max-width: $breakpoint-xxl) {
+      padding: $spacing-xl 15px $spacing-lg;
+    }
   }
 
   .main__section,
@@ -21,11 +25,23 @@
     flex-wrap: wrap;
     gap: 60px;
     width: 100%;
+    justify-content: center;
   }
 
   .news__row {
     display: flex;
-    gap: $spacing-xl;
+    justify-content: space-between;
+    padding-left: 15px;
+    gap: 30px;
+
+    @include respond-xl {
+      gap: 30px;
+    }
+
+    @include respond-md {
+      flex-direction: column;
+      padding-left: 0px;
+    }
   }
 
   .citations {
@@ -34,6 +50,25 @@
     align-items: center;
     width: 100%;
     padding-bottom: $spacing-xxl;
+
+    @include respond-xl {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @include respond-md {
+      div:nth-child(2) {
+        display: none;
+      }
+
+      div:nth-child(3) {
+        display: none;
+      }
+
+      div:nth-child(4) {
+        display: none;
+      }
+    }
   }
 
   .banner {
@@ -45,6 +80,16 @@
     justify-content: center;
     align-items: center;
     gap: 60px;
-    width: 110%;
+    padding: 0 15px;
+
+    @include respond-xl {
+      padding: 0 15px;
+      width: 95%;
+      gap: 20px;
+    }
+
+    @include respond-md {
+      flex-direction: column;
+    }
   }
 }

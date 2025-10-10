@@ -23,6 +23,12 @@
     .menu__nav {
       display: flex;
       gap: $spacing-xxl;
+
+      @include respond-xl {
+        div:first-child {
+          display: none;
+        }
+      }
     }
   }
 
@@ -38,5 +44,9 @@
     justify-content: center;
     align-items: center;
     font-size: $font-size-regular;
+
+    @include respond-xl {
+      overflow-x: hidden;
+    }
   }
 }

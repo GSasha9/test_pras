@@ -31,7 +31,10 @@ const Header = () => {
         <div className={styles.menu__wrapper}>
           <Logo colored={true} />
           <nav className={styles.menu__nav}>
-            <Menu items={HEADER_MENU_LIST} upperCase={true} />
+            <div>
+              <Menu items={HEADER_MENU_LIST} upperCase={true} />
+            </div>
+
             <BurgerButton callback={handleOpen} />
           </nav>
         </div>
