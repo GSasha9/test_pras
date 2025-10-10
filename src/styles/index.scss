@@ -9,7 +9,7 @@ body {
 
 h4 {
   @include text-spaced;
-  padding: $spacing-xl 0px $spacing-lg;
+  padding: 0px 0px $spacing-lg;
   font-size: $font-size-h4;
   text-transform: uppercase;
   font-weight: $font-weight-normal;

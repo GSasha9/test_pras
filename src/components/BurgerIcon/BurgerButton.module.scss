@@ -6,11 +6,17 @@
   gap: 8px;
   width: 48px;
   height: 12px;
+  cursor: pointer;
 
   .burgerButton__line {
     width: 48px;
     height: 2px;
     background-color: $text-light;
     border-radius: $border-radius-burger;
+    transition: height 0.2s ease;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
   }
 }

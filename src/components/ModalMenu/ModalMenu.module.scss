@@ -1,0 +1,78 @@
+@use '../../styles/scss/variables.scss' as *;
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: $z-index-modal;
+
+  .modal_content {
+    background-color: $bright-background;
+    max-width: 1180px;
+    width: 1180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px $spacing-xxl;
+    gap: 100px;
+
+    .modal_top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .close {
+        background-image: url('close.svg');
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(-1px);
+        }
+      }
+    }
+
+    .modal_main {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      justify-content: flex-start;
+      align-items: start;
+
+      .modal_nav {
+        display: flex;
+        gap: 75px;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    .modal_bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: -20px;
+
+      div {
+        p {
+          padding: 0 5px;
+        }
+        color: $text-light;
+        max-width: 520px;
+        width: 520px;
+      }
+    }
+  }
+}

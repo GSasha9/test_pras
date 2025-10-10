@@ -5,7 +5,7 @@ import Banner from '../Banner/Banner';
 import Citation from '../Citation/Citation';
 import NewsBlock from '../NewsBlock/NewsBlock';
 import SocialsBlock from '../SocialsBlock/SocialsBlock';
-import SubscribeForm from '../SubscribeForm/SubscribeForm';
+import SubscribeBlock from '../SubscribeBlock/SubscribeBlock';
 
 import styles from './Main.module.scss';
 
@@ -13,7 +13,7 @@ const Main = () => {
   return (
     <main className={styles.main} style={{ display: 'flex' }}>
       <div className="container">
-        <h4>Последнее</h4>
+        <h4 className={styles.title}>Последнее</h4>
 
         <section className={styles.main__section}>
           <section className={styles.news}>
@@ -41,12 +41,12 @@ const Main = () => {
       <section className={styles.banner}>
         <Banner {...BANNERS_DATA.main} />
       </section>
-      <div className="container">
-        <section className={styles.contacts}>
-          <SocialsBlock />
-          <SubscribeForm></SubscribeForm>
-        </section>
-      </div>
+
+      <section className={styles.contacts}>
+        <SocialsBlock />
+        <SubscribeBlock />
+      </section>
+
       <section className={styles.banner}>
         <Banner {...BANNERS_DATA.footer} />
       </section>

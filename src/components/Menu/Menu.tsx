@@ -3,20 +3,25 @@ import styles from './Menu.module.scss';
 interface MenuProps {
   items: string[];
   upperCase: boolean;
+  fontSize?: string;
+  gap?: string;
+  direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
 }
 
-const Menu = ({ items, upperCase }: MenuProps) => {
+const Menu = ({ items, upperCase, fontSize, gap, direction }: MenuProps) => {
+  const style: React.CSSProperties = {
+    ...(upperCase ? { textTransform: 'uppercase' } : {}),
+    ...(fontSize ? { fontSize: fontSize } : {}),
+    ...(gap ? { gap } : {}),
+    ...(direction ? { flexDirection: direction } : {}),
+  };
+
   return (
-    <ul
-      className={styles.menu__list}
-      style={upperCase ? { textTransform: 'uppercase' } : {}}
-    >
+    <ul className={styles.menu__list} style={style}>
       {items.map((el) => (
         <li
           key={el}
-          className={
-            upperCase ? `${styles.item_uppercase}` : `${styles.item_regular}`
-          }
+          className={upperCase ? styles.item_uppercase : styles.item_regular}
         >
           <a href="#">{el}</a>
         </li>

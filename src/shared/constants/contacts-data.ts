@@ -5,4 +5,8 @@ export const CONTACTS_DATA: Record<string, ContatctsProps> = {
     title: 'Реклама:',
     contact: 'ads@sporthub.news',
   },
+  advert: {
+    title: 'Размещение рекламы:',
+    contact: 'ads@sporthub.news',
+  },
 };

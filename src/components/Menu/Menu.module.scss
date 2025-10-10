@@ -7,19 +7,21 @@
   gap: $spacing-xxl;
   padding-left: 0;
   margin: 0px 10px;
+  font-size: $font-size-text-12;
 
   .item_uppercase {
     @include text-spaced;
     white-space: nowrap;
+    font-size: inherit;
   }
 
   .item_regular {
-    font-size: $font-size-regular;
     white-space: nowrap;
   }
 
   li {
     position: relative;
+    width: fit-content;
 
     a {
       text-decoration: none;

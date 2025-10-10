@@ -7,7 +7,7 @@
   align-items: center;
   gap: 60px;
 
-  h4 {
+  .title {
     @include text-spaced;
     padding: $spacing-xl 0px $spacing-lg;
     font-size: $font-size-h4;
@@ -30,6 +30,10 @@
 
   .citations {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: $spacing-xxl;
   }
 
   .banner {
@@ -40,5 +44,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 60px;
+    width: 110%;
   }
 }
