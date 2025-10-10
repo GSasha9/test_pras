@@ -8,7 +8,7 @@ const Socials = ({ items }: SocialsProps) => {
   return (
     <ul className={styles.socials__list}>
       {items.map((el) => (
-        <li className={styles.socials__list_item} key={el.split('.')[0]}>
+        <li className={styles.socials__list_item} key={crypto.randomUUID()}>
           <a
             href="#"
             className={styles.socials__list_link}

@@ -23,6 +23,14 @@
     padding: 20px $spacing-xxl;
     gap: 100px;
 
+    @include respond-xl {
+      width: 80%;
+      height: 100vh;
+      overflow-y: auto;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+
     .modal_top {
       display: flex;
       justify-content: space-between;
@@ -56,6 +64,11 @@
         gap: 75px;
         width: 100%;
         justify-content: center;
+      }
+
+      .modal_socials {
+        display: flex;
+        flex-wrap: wrap;
       }
     }
 

@@ -13,9 +13,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     gap: $spacing-md;
+       padding: 0px $spacing-lg 24px;
 
     @media screen and (max-width: $breakpoint-xxl) {
-      width: 45vw;
+      width: 40vw;
     }
 
     @include respond-md {
@@ -61,14 +62,14 @@
   }
 
   .covered {
-    height: 540px;
+    height: 525px;
     max-width: 600px;
     justify-content: flex-end;
     color: $text-light;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: $spacing-lg;
+ 
 
     .newsBlock__meta_date,
     .newsBlock__meta_tag,

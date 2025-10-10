@@ -2,7 +2,7 @@ import type { NewsBlockProps } from '../../components/NewsBlock/NewsBlock';
 
 export const NEWS_DATA: Record<string, NewsBlockProps> = {
   alpinism: {
-    image: '/climbers.png',
+    image: './climbers.png',
     date: 'Сегодня',
     tag: 'болельщикам',
     title:
@@ -12,7 +12,7 @@ export const NEWS_DATA: Record<string, NewsBlockProps> = {
     isWide: false,
   },
   skii: {
-    image: '/skii.png',
+    image: './skii.png',
     date: '09.07.19',
     tag: 'любительский_спорт',
     title:
@@ -22,7 +22,7 @@ export const NEWS_DATA: Record<string, NewsBlockProps> = {
     isWide: false,
   },
   football: {
-    image: 'football.png',
+    image: './football.png',
     date: '09.07.19',
     tag: 'Профессиональный_спорт',
     title:
