@@ -1,0 +1,8 @@
+@use '../../styles/scss/variables.scss' as *;
+
+.socials__wrapper {
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

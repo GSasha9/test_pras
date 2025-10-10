@@ -1,0 +1,47 @@
+@use '../../styles/scss/variables.scss' as *;
+
+.footer {
+  background-color: $bright-background;
+  color: $text-light;
+  display: flex;
+  justify-content: center;
+  padding: 34px 0px;
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    width: 1360px;
+
+    .footer__nav_wrapper {
+      display: flex;
+      gap: 25%;
+    }
+
+    .footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      font-size: $font-size-text-12;
+      font-weight: $font-weight-normal;
+
+      .about {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+.footer__link {
+  text-decoration: none;
+  color: $text-light;
+  font-weight: 500;
+  padding: 4px 0;
+  transition: color 0.3s;
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &:hover {
+    color: rgb(0, 0, 0);
+  }
+}
