@@ -1,0 +1,6 @@
+@use '../../styles/scss/variables.scss' as *;
+
+.footer {
+  background-color: $bright-background;
+  color: $text-light;
+}
