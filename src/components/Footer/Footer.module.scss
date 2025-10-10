@@ -11,10 +11,11 @@
     display: flex;
     flex-direction: column;
     width: 1360px;
+    gap: $spacing-xxl;
 
     .footer__nav_wrapper {
       display: flex;
-      gap: 25%;
+      gap: 250px;
     }
 
     .footer__bottom {

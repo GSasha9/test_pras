@@ -1,0 +1,13 @@
+.subscribe__wrapper {
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  div {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 180px;
+  }
+}
