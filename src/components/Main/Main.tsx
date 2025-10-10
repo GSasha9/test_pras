@@ -1,10 +1,10 @@
-import { CITATION_DATA, SOCIALS_ICONS } from '../../shared/constants';
+import { CITATION_DATA } from '../../shared/constants';
 import { BANNERS_DATA } from '../../shared/constants';
 import { NEWS_DATA } from '../../shared/constants/news-data';
 import Banner from '../Banner/Banner';
 import Citation from '../Citation/Citation';
 import NewsBlock from '../NewsBlock/NewsBlock';
-import Socials from '../Socials/Socials';
+import SocialsBlock from '../SocialsBlock/SocialsBlock';
 import SubscribeForm from '../SubscribeForm/SubscribeForm';
 
 import styles from './Main.module.scss';
@@ -43,7 +43,7 @@ const Main = () => {
       </section>
       <div className="container">
         <section className={styles.contacts}>
-          <Socials items={SOCIALS_ICONS} />
+          <SocialsBlock />
           <SubscribeForm></SubscribeForm>
         </section>
       </div>
