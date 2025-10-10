@@ -14,7 +14,7 @@ const SubscribeForm = () => {
           type="email"
           placeholder="Введите ваш email"
         ></input>
-        <button>Подписаться</button>
+        <button className={styles.form_button}>Подписаться</button>
       </form>
     </div>
   );

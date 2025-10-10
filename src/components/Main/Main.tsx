@@ -36,16 +36,20 @@ const Main = () => {
             <NewsBlock {...NEWS_DATA.alpinism} />
             <NewsBlock {...NEWS_DATA.football} />
           </div>
-          <section className={styles.banner}>
-            <Banner {...BANNERS_DATA.main} />
-          </section>
-
-          <section className={styles.contacts}>
-            <Socials items={SOCIALS_ICONS} />
-            <SubscribeForm></SubscribeForm>
-          </section>
         </section>
       </div>
+      <section className={styles.banner}>
+        <Banner {...BANNERS_DATA.main} />
+      </section>
+      <div className="container">
+        <section className={styles.contacts}>
+          <Socials items={SOCIALS_ICONS} />
+          <SubscribeForm></SubscribeForm>
+        </section>
+      </div>
+      <section className={styles.banner}>
+        <Banner {...BANNERS_DATA.footer} />
+      </section>
     </main>
   );
 };
