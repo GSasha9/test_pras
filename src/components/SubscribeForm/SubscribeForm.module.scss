@@ -1,0 +1,52 @@
+@use '../../styles/scss/variables.scss' as *;
+
+.subscribe__wrapper {
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .subscribe__form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    height: 180px;
+    align-items: center;
+    gap: 20px;
+
+    .form_input {
+      width: 55%;
+      height: 28px;
+      border: none;
+      background-color: inherit;
+      border-bottom: 1px solid gray;
+      color: $text-light;
+
+      &::placeholder {
+        $font-size-regular: 14px;
+        color: $text-light;
+        font-weight: $font-weight-normal;
+        letter-spacing: 0.2px;
+      }
+    }
+
+    .form_button {
+      max-width: 200px;
+      width: 200px;
+      height: 40px;
+      background-color: $bright-background;
+      border: none;
+      color: $text-light;
+      @include text-spaced;
+      padding: 10px;
+      border-radius: 100px;
+
+      &:hover {
+        background-color: $light-background;
+        color: $bright-background;
+        cursor: pointer;
+      }
+    }
+  }
+}

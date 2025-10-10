@@ -7,6 +7,14 @@ body {
   background-color: $light-background;
 }
 
+h4 {
+  @include text-spaced;
+  padding: $spacing-xl 0px $spacing-lg;
+  font-size: $font-size-h4;
+  text-transform: uppercase;
+  font-weight: $font-weight-normal;
+}
+
 :root {
   display: flex;
   flex-direction: column;
