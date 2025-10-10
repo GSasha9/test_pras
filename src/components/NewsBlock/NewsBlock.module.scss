@@ -1,6 +1,9 @@
 @use '../../styles/scss/variables.scss' as *;
 
 .newsBlock__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .newsBlock__wrapper {
     display: flex;
     flex-direction: column;
@@ -10,6 +13,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     gap: $spacing-md;
+
+    @media screen and (max-width: $breakpoint-xxl) {
+      width: 45vw;
+    }
+
+    @include respond-md {
+      width: 100%;
+    }
 
     .newsBlock__img {
       max-width: 100%;
@@ -64,6 +75,14 @@
     .newsBlock__title,
     .newsBlock__preview {
       color: $text-light;
+    }
+
+    @media screen and (max-width: $breakpoint-xxl) {
+      width: 40vw;
+    }
+
+    @include respond-md {
+      width: 85%;
     }
   }
   &:hover {

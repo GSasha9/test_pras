@@ -9,6 +9,10 @@
   align-items: center;
   padding: 0px;
 
+  @include respond-md {
+    flex-wrap: wrap;
+  }
+
   .socials__list_item {
     width: 48px;
     height: 48px;

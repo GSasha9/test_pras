@@ -6,6 +6,16 @@
   flex-direction: column;
   justify-content: center;
 
+  @include respond-xl {
+    width: 47vw;
+    min-width: 505px;
+  }
+
+  @include respond-md {
+    width: 100%;
+    min-width: 320px;
+  }
+
   div {
     height: 180px;
     display: flex;

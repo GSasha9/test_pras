@@ -4,9 +4,13 @@
   display: flex;
   justify-content: center;
   width: 100%;
-
+  padding: 0 20px;
   align-items: center;
   gap: 20px;
+
+  @include respond-xl {
+    flex-direction: column;
+  }
 
   .form_input {
     width: 55%;
@@ -16,6 +20,10 @@
     border-bottom: 1px solid rgb(255, 255, 255);
     color: $text-light;
     outline: none;
+
+    @include respond-xl {
+      width: 90%;
+    }
 
     &::placeholder {
       $font-size-regular: 14px;
