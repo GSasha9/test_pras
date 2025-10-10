@@ -2,7 +2,8 @@ import styles from './Banner.module.scss';
 
 export interface BannerProps {
   primaryText: string;
-  secondaryText: string;
+  tag?: string;
+  secondaryText?: string;
   imgLink: string;
   inHeader?: boolean;
 }
@@ -12,12 +13,15 @@ const Banner = ({
   secondaryText,
   imgLink,
   inHeader,
+  tag,
 }: BannerProps) => {
   return (
     <div
       className={`${styles.banner__wrapper} ${inHeader ? styles.big : styles.small}`}
-      style={{
-        backgroundImage: `
+      style={
+        inHeader
+          ? {
+              backgroundImage: `
           linear-gradient(
             to bottom,
             rgba(0, 0, 0, 0.6) 0%,
@@ -27,12 +31,24 @@ const Banner = ({
           ),
           url(${imgLink})
         `,
-      }}
+            }
+          : {
+              backgroundImage: `
+          linear-gradient(
+            to bottom,
+            rgba(105, 104, 104, 0.6) 0%,
+            rgba(105, 104, 104, 0.6) 100%
+          ),
+          url(${imgLink})
+        `,
+            }
+      }
     >
       <div className={styles.banner__text}>
         <a href="#">
-          <p className={styles.banner__text_secondary}>#{secondaryText}</p>
+          <p className={styles.banner__tag}>{tag}</p>
           <h2 className={styles.banner__text_primary}>{primaryText}</h2>
+          <p className={styles.banner__text_secondary}>{secondaryText}</p>
         </a>
       </div>
     </div>
