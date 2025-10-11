@@ -90,6 +90,13 @@
 
     @include respond-md {
       flex-direction: column;
+      width: 100%;
+
+      padding: 0px;
+
+      h4 {
+        padding-left: 15px;
+      }
     }
   }
 }
