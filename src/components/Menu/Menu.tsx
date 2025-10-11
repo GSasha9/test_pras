@@ -20,7 +20,7 @@ const Menu = ({ items, upperCase, fontSize, gap, direction }: MenuProps) => {
     <ul className={styles.menu__list} style={style}>
       {items.map((el) => (
         <li
-          key={el}
+          key={`${el}${crypto.randomUUID()}`}
           className={upperCase ? styles.item_uppercase : styles.item_regular}
         >
           <a href="#">{el}</a>

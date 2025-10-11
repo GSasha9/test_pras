@@ -34,19 +34,49 @@
 
   .subMenu__wrapper {
     width: 100%;
-    background-color: $bright-background;
     height: 60px;
+    background-color: $bright-background;
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: $z-index-fixed;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: $font-size-regular;
+    justify-content: center;
+    overflow: hidden;
 
-    @include respond-xl {
-      overflow-x: hidden;
+    .subMenu__track {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+
+      ul:last-child {
+        display: none;
+      }
+
+      @include respond-xl {
+        animation: scroll 20s linear infinite;
+        justify-content: flex-start;
+        ul:last-child {
+          display: flex;
+        }
+      }
+    }
+
+    .subMenu__item {
+      display: inline-block;
+      padding: 0 2rem;
+      font-size: $font-size-regular;
+      flex-shrink: 0;
+    }
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(20);
+    }
+    to {
+      transform: translateX(-20%);
     }
   }
 }

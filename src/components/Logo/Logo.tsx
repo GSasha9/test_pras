@@ -8,7 +8,7 @@ const Logo = ({ colored }: LogoProps) => {
   return (
     <a href="/" className={styles.logo__link}>
       <img
-        src={colored ? '/logo_color.svg' : 'logo_white.svg'}
+        src={colored ? './logo_color.svg' : './logo_white.svg'}
         alt="sporthub logotype"
       ></img>
     </a>
