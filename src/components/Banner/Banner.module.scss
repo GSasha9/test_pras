@@ -13,7 +13,9 @@
   width: 100%;
   left: 0px;
 
-
+  @include respond-md {
+    max-height: 400px;
+  }
 
   .banner__text {
     max-width: 650px;
@@ -26,20 +28,28 @@
         color: $bright-background;
       }
 
-          @include respond-md {
-      padding: 0px 15px;
-    }
+      @include respond-md {
+        padding: 0px 15px;
+      }
     }
 
     .banner__tag {
       @include text-spaced;
       color: $text-light;
       padding-top: $spacing-xl;
+
+      @include respond-md {
+        padding-top: 80px;
+      }
     }
 
     .banner__text_primary {
       font-size: $font-size-h2;
       font-weight: $font-weight-bold;
+
+      @include respond-md {
+        font-size: 20px;
+      }
     }
 
     .banner__text_secondary {
@@ -53,9 +63,24 @@
 
 .small {
   min-height: 536px;
+
+  @include respond-xl {
+    max-height: 276px;
+    min-height: 276px;
+  }
+
+  @include respond-md {
+    max-height: 300px;
+    min-height: 300px;
+  }
 }
 
 .big {
   min-height: 580px;
   position: absolute;
+
+  @include respond-md {
+    max-height: 230px;
+    min-height: 230px;
+  }
 }
