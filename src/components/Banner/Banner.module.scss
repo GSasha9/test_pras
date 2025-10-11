@@ -11,8 +11,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  //position: absolute;
   left: 0px;
+
+
 
   .banner__text {
     max-width: 650px;
@@ -24,6 +25,10 @@
       &:hover {
         color: $bright-background;
       }
+
+          @include respond-md {
+      padding: 0px 15px;
+    }
     }
 
     .banner__tag {
