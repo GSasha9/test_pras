@@ -17,7 +17,7 @@
     gap: $spacing-md;
     padding: 0px 0px 24px;
 
-        @include respond-xl {
+    @include respond-xl {
       padding: 0px 10px 24px;
       width: 100%;
     }
@@ -26,10 +26,6 @@
       padding: 0px 0px 0px;
       gap: 10px;
     }
-
-    // @media screen and (max-width: $breakpoint-xxl) {
-    //   width: 43vw;
-    // }
 
     @include respond-md {
       width: 100%;
@@ -99,7 +95,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-        padding: 0px $spacing-lg 24px;
+    padding: 0px $spacing-lg 24px;
 
     .newsBlock__meta_date,
     .newsBlock__meta_tag,

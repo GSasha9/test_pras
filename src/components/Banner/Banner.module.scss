@@ -64,7 +64,7 @@
 .small {
   min-height: 536px;
 
-    @include respond-xl {
+  @include respond-xl {
     max-height: 276px;
     min-height: 276px;
   }
