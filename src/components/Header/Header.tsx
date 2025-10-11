@@ -39,7 +39,10 @@ const Header = () => {
           </nav>
         </div>
         <nav className={styles.subMenu__wrapper}>
-          <Menu items={SUB_HEADER_MENU_LIST} upperCase={false} />
+          <div className={styles.subMenu__track}>
+            <Menu items={SUB_HEADER_MENU_LIST} upperCase={false} />
+            <Menu items={SUB_HEADER_MENU_LIST} upperCase={false} />
+          </div>
         </nav>
       </div>
       <ModalMenu isOpen={isOpen} handleClose={handleClose} />
