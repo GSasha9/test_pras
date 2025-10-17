@@ -47,6 +47,7 @@ $breakpoint-xs: 0;
 $breakpoint-s: 460px;
 $breakpoint-sm: 576px;
 $breakpoint-md: 767px;
+$breakpoint-mmd: 800px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
@@ -72,6 +73,12 @@ $breakpoint-xxxl: 1440px;
 
 @mixin respond-md {
   @media screen and (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin respond-mmd {
+  @media screen and (max-width: $breakpoint-mmd) {
     @content;
   }
 }

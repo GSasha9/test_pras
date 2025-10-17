@@ -14,7 +14,7 @@ const Citation = ({ image, name, role, text }: CitationProps) => {
         <img src={image} alt={name}></img>
       </div>
 
-      <div className={styles.citation__spiker}>
+      <div className={styles.citation__speaker}>
         <p className={styles.citation__name}>{name}</p>
         <p className={styles.citation__role}>{role}</p>
       </div>
