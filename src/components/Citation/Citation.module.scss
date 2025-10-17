@@ -8,15 +8,17 @@
   align-items: center;
   gap: $spacing-md;
 
-  .citation__name {
-    font-size: $font-size-h4;
-    font-weight: $font-weight-bold;
-  }
+  .citation__speaker {
+    .citation__name {
+      font-size: $font-size-h4;
+      font-weight: $font-weight-bold;
+    }
 
-  .citation__role {
-    @include text-spaced;
-    font-size: $font-size-text-11;
-    text-transform: uppercase;
+    .citation__role {
+      @include text-spaced;
+      font-size: $font-size-text-11;
+      text-transform: uppercase;
+    }
   }
 
   .citation__text {
